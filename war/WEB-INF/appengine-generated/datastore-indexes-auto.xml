@@ -1,0 +1,23 @@
+<!-- Indices written at Thu, 25 Aug 2016 12:19:26 IST -->
+
+<datastore-indexes>
+
+    <!-- Used 33 times in query history -->
+    <datastore-index kind="ForumAnswerJDO" ancestor="false" source="auto">
+        <property name="queryID" direction="asc"/>
+        <property name="answeredLongTime" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 2 times in query history -->
+    <datastore-index kind="ForumQueryJDO" ancestor="false" source="auto">
+        <property name="userID" direction="asc"/>
+        <property name="postedLongTime" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 1 time in query history -->
+    <datastore-index kind="PerformanceDetailsJDO" ancestor="false" source="auto">
+        <property name="userID" direction="asc"/>
+        <property name="conceptID" direction="asc"/>
+    </datastore-index>
+
+</datastore-indexes>
