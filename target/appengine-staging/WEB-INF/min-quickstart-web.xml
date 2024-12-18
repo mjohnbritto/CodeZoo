@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metadata-complete="false" version="6.0" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+      
+    <display-name>ROOT</display-name>
+      
+    <context-param>
+            
+        <param-name>org.eclipse.jetty.containerInitializers</param-name>
+            
+        <param-value><![CDATA[
+    "ContainerInitializer{org.eclipse.jetty.ee8.apache.jsp.JettyJasperInitializer,interested=[],applicable=[],annotated=[]}",
+    "ContainerInitializer{org.springframework.web.SpringServletContainerInitializer,interested=[org.springframework.web.context.AbstractContextLoaderInitializer, org.springframework.web.server.adapter.AbstractReactiveWebInitializer, org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer, org.springframework.web.servlet.support.AbstractDispatcherServletInitializer],applicable=[],annotated=[]}"]]></param-value>
+          
+    </context-param>
+      
+    <context-param>
+            
+        <param-name>org.eclipse.jetty.tlds</param-name>
+            
+        <param-value><![CDATA[
+    "jar:${WAR.uri}/WEB-INF/lib/org.glassfish.web.javax.servlet.jsp.jstl-1.2.5.jar!/META-INF/sql.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/org.glassfish.web.javax.servlet.jsp.jstl-1.2.5.jar!/META-INF/x-1_0-rt.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/org.glassfish.web.javax.servlet.jsp.jstl-1.2.5.jar!/META-INF/x.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/spring-webmvc-5.3.27.jar!/META-INF/spring.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/org.glassfish.web.javax.servlet.jsp.jstl-1.2.5.jar!/META-INF/fmt-1_0-rt.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/spring-webmvc-5.3.27.jar!/META-INF/spring-form.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/org.glassfish.web.javax.servlet.jsp.jstl-1.2.5.jar!/META-INF/permittedTaglibs.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/org.glassfish.web.javax.servlet.jsp.jstl-1.2.5.jar!/META-INF/scriptfree.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/org.glassfish.web.javax.servlet.jsp.jstl-1.2.5.jar!/META-INF/sql-1_0-rt.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/org.glassfish.web.javax.servlet.jsp.jstl-1.2.5.jar!/META-INF/fmt.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/org.glassfish.web.javax.servlet.jsp.jstl-1.2.5.jar!/META-INF/c-1_0.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/org.glassfish.web.javax.servlet.jsp.jstl-1.2.5.jar!/META-INF/c.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/org.glassfish.web.javax.servlet.jsp.jstl-1.2.5.jar!/META-INF/sql-1_0.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/org.glassfish.web.javax.servlet.jsp.jstl-1.2.5.jar!/META-INF/fn.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/org.glassfish.web.javax.servlet.jsp.jstl-1.2.5.jar!/META-INF/fmt-1_0.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/org.glassfish.web.javax.servlet.jsp.jstl-1.2.5.jar!/META-INF/x-1_0.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/org.glassfish.web.javax.servlet.jsp.jstl-1.2.5.jar!/META-INF/c-1_0-rt.tld"]]></param-value>
+          
+    </context-param>
+      
+    <context-param>
+            
+        <param-name>org.eclipse.jetty.resources</param-name>
+            
+        <param-value/>
+          
+    </context-param>
+      
+    <context-param>
+            
+        <param-name>org.eclipse.jetty.originAttribute</param-name>
+            
+        <param-value>origin</param-value>
+          
+    </context-param>
+      
+    <servlet>
+            
+        <servlet-name>FlowController</servlet-name>
+            
+        <servlet-class origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):0">org.springframework.web.servlet.DispatcherServlet</servlet-class>
+            
+        <async-supported>false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>org.apache.jsp.pages.algorithm.FibonacciModal_jsp</servlet-name>
+            
+        <servlet-class origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):1">org.apache.jsp.pages.algorithm.FibonacciModal_jsp</servlet-class>
+            
+        <async-supported>false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>org.apache.jsp.pages.algorithm.SearchModal_jsp</servlet-name>
+            
+        <servlet-class origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):2">org.apache.jsp.pages.algorithm.SearchModal_jsp</servlet-class>
+            
+        <async-supported>false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>org.apache.jsp.pages.algorithm.TriangularModal_jsp</servlet-name>
+            
+        <servlet-class origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):3">org.apache.jsp.pages.algorithm.TriangularModal_jsp</servlet-class>
+            
+        <async-supported>false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>org.apache.jsp.pages.algorithm.SortModal_jsp</servlet-name>
+            
+        <servlet-class origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):4">org.apache.jsp.pages.algorithm.SortModal_jsp</servlet-class>
+            
+        <async-supported>false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>org.apache.jsp.pages.Contact_jsp</servlet-name>
+            
+        <servlet-class origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):5">org.apache.jsp.pages.Contact_jsp</servlet-class>
+            
+        <async-supported>false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>org.apache.jsp.pages.algorithm.SwapModal_jsp</servlet-name>
+            
+        <servlet-class origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):6">org.apache.jsp.pages.algorithm.SwapModal_jsp</servlet-class>
+            
+        <async-supported>false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>org.apache.jsp.persist.QuizDetails_jsp</servlet-name>
+            
+        <servlet-class origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):7">org.apache.jsp.persist.QuizDetails_jsp</servlet-class>
+            
+        <async-supported>false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>org.apache.jsp.pages.HomePage_jsp</servlet-name>
+            
+        <servlet-class origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):8">org.apache.jsp.pages.HomePage_jsp</servlet-class>
+            
+        <async-supported>false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>org.apache.jsp.pages.PerformanceAnalyzer_jsp</servlet-name>
+            
+        <servlet-class origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):9">org.apache.jsp.pages.PerformanceAnalyzer_jsp</servlet-class>
+            
+        <async-supported>false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>org.apache.jsp.pages.resetPassword_jsp</servlet-name>
+            
+        <servlet-class origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):10">org.apache.jsp.pages.resetPassword_jsp</servlet-class>
+            
+        <async-supported>false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>org.apache.jsp.pages.Dashboard_jsp</servlet-name>
+            
+        <servlet-class origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):11">org.apache.jsp.pages.Dashboard_jsp</servlet-class>
+            
+        <async-supported>false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>org.apache.jsp.pages.About_jsp</servlet-name>
+            
+        <servlet-class origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):12">org.apache.jsp.pages.About_jsp</servlet-class>
+            
+        <async-supported>false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>org.apache.jsp.pages.Forum_jsp</servlet-name>
+            
+        <servlet-class origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):13">org.apache.jsp.pages.Forum_jsp</servlet-class>
+            
+        <async-supported>false</async-supported>
+          
+    </servlet>
+      
+    <servlet>
+            
+        <servlet-name>org.apache.jsp.persist.CourseConceptsDetails_jsp</servlet-name>
+            
+        <servlet-class origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):14">org.apache.jsp.persist.CourseConceptsDetails_jsp</servlet-class>
+            
+        <async-supported>false</async-supported>
+          
+    </servlet>
+      
+    <servlet-mapping origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):15">
+            
+        <servlet-name>org.apache.jsp.pages.algorithm.FibonacciModal_jsp</servlet-name>
+            
+        <url-pattern>/pages/algorithm/FibonacciModal.jsp</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):16">
+            
+        <servlet-name>org.apache.jsp.pages.algorithm.SearchModal_jsp</servlet-name>
+            
+        <url-pattern>/pages/algorithm/SearchModal.jsp</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):17">
+            
+        <servlet-name>org.apache.jsp.pages.algorithm.TriangularModal_jsp</servlet-name>
+            
+        <url-pattern>/pages/algorithm/TriangularModal.jsp</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):18">
+            
+        <servlet-name>org.apache.jsp.pages.algorithm.SortModal_jsp</servlet-name>
+            
+        <url-pattern>/pages/algorithm/SortModal.jsp</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):19">
+            
+        <servlet-name>org.apache.jsp.pages.Contact_jsp</servlet-name>
+            
+        <url-pattern>/pages/Contact.jsp</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):20">
+            
+        <servlet-name>org.apache.jsp.pages.algorithm.SwapModal_jsp</servlet-name>
+            
+        <url-pattern>/pages/algorithm/SwapModal.jsp</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):21">
+            
+        <servlet-name>org.apache.jsp.persist.QuizDetails_jsp</servlet-name>
+            
+        <url-pattern>/persist/QuizDetails.jsp</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):22">
+            
+        <servlet-name>org.apache.jsp.pages.HomePage_jsp</servlet-name>
+            
+        <url-pattern>/pages/HomePage.jsp</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):23">
+            
+        <servlet-name>org.apache.jsp.pages.PerformanceAnalyzer_jsp</servlet-name>
+            
+        <url-pattern>/pages/PerformanceAnalyzer.jsp</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):24">
+            
+        <servlet-name>org.apache.jsp.pages.resetPassword_jsp</servlet-name>
+            
+        <url-pattern>/pages/resetPassword.jsp</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):25">
+            
+        <servlet-name>org.apache.jsp.pages.Dashboard_jsp</servlet-name>
+            
+        <url-pattern>/pages/Dashboard.jsp</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):26">
+            
+        <servlet-name>org.apache.jsp.pages.About_jsp</servlet-name>
+            
+        <url-pattern>/pages/About.jsp</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):27">
+            
+        <servlet-name>org.apache.jsp.pages.Forum_jsp</servlet-name>
+            
+        <url-pattern>/pages/Forum.jsp</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):28">
+            
+        <servlet-name>org.apache.jsp.persist.CourseConceptsDetails_jsp</servlet-name>
+            
+        <url-pattern>/persist/CourseConceptsDetails.jsp</url-pattern>
+          
+    </servlet-mapping>
+      
+    <servlet-mapping origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):29">
+            
+        <servlet-name>FlowController</servlet-name>
+            
+        <url-pattern>/</url-pattern>
+          
+    </servlet-mapping>
+      
+  
+  
+    <welcome-file-list>
+    
+    
+  </welcome-file-list>
+      
+    <locale-encoding-mapping-list>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///Users/britto/Library/Application%20Support/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/jetty12/webdefault.xml):34">
+                  
+            <locale>de</locale>
+                  
+            <encoding>ISO-8859-1</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///Users/britto/Library/Application%20Support/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/jetty12/webdefault.xml):35">
+                  
+            <locale>no</locale>
+                  
+            <encoding>ISO-8859-1</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///Users/britto/Library/Application%20Support/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/jetty12/webdefault.xml):36">
+                  
+            <locale>be</locale>
+                  
+            <encoding>ISO-8859-5</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///Users/britto/Library/Application%20Support/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/jetty12/webdefault.xml):37">
+                  
+            <locale>fi</locale>
+                  
+            <encoding>ISO-8859-1</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///Users/britto/Library/Application%20Support/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/jetty12/webdefault.xml):38">
+                  
+            <locale>ru</locale>
+                  
+            <encoding>ISO-8859-5</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///Users/britto/Library/Application%20Support/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/jetty12/webdefault.xml):39">
+                  
+            <locale>pt</locale>
+                  
+            <encoding>ISO-8859-1</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///Users/britto/Library/Application%20Support/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/jetty12/webdefault.xml):40">
+                  
+            <locale>bg</locale>
+                  
+            <encoding>ISO-8859-5</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///Users/britto/Library/Application%20Support/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/jetty12/webdefault.xml):41">
+                  
+            <locale>lt</locale>
+                  
+            <encoding>ISO-8859-2</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///Users/britto/Library/Application%20Support/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/jetty12/webdefault.xml):42">
+                  
+            <locale>hr</locale>
+                  
+            <encoding>ISO-8859-2</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///Users/britto/Library/Application%20Support/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/jetty12/webdefault.xml):43">
+                  
+            <locale>lv</locale>
+                  
+            <encoding>ISO-8859-2</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///Users/britto/Library/Application%20Support/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/jetty12/webdefault.xml):44">
+                  
+            <locale>fr</locale>
+                  
+            <encoding>ISO-8859-1</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///Users/britto/Library/Application%20Support/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/jetty12/webdefault.xml):45">
+                  
+            <locale>hu</locale>
+                  
+            <encoding>ISO-8859-2</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///Users/britto/Library/Application%20Support/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/jetty12/webdefault.xml):46">
+                  
+            <locale>zh_TW</locale>
+                  
+            <encoding>Big5</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///Users/britto/Library/Application%20Support/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/jetty12/webdefault.xml):47">
+                  
+            <locale>sh</locale>
+                  
+            <encoding>ISO-8859-5</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///Users/britto/Library/Application%20Support/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/jetty12/webdefault.xml):48">
+                  
+            <locale>uk</locale>
+                  
+            <encoding>ISO-8859-5</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///Users/britto/Library/Application%20Support/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/jetty12/webdefault.xml):49">
+                  
+            <locale>sk</locale>
+                  
+            <encoding>ISO-8859-2</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///Users/britto/Library/Application%20Support/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/jetty12/webdefault.xml):50">
+                  
+            <locale>sl</locale>
+                  
+            <encoding>ISO-8859-2</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///Users/britto/Library/Application%20Support/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/jetty12/webdefault.xml):51">
+                  
+            <locale>ca</locale>
+                  
+            <encoding>ISO-8859-1</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///Users/britto/Library/Application%20Support/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/jetty12/webdefault.xml):52">
+                  
+            <locale>mk</locale>
+                  
+            <encoding>ISO-8859-5</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///Users/britto/Library/Application%20Support/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/jetty12/webdefault.xml):53">
+                  
+            <locale>sq</locale>
+                  
+            <encoding>ISO-8859-2</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///Users/britto/Library/Application%20Support/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/jetty12/webdefault.xml):54">
+                  
+            <locale>sr</locale>
+                  
+            <encoding>ISO-8859-5</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///Users/britto/Library/Application%20Support/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/jetty12/webdefault.xml):55">
+                  
+            <locale>sv</locale>
+                  
+            <encoding>ISO-8859-1</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///Users/britto/Library/Application%20Support/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/jetty12/webdefault.xml):56">
+                  
+            <locale>ko</locale>
+                  
+            <encoding>EUC-KR</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///Users/britto/Library/Application%20Support/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/jetty12/webdefault.xml):57">
+                  
+            <locale>el</locale>
+                  
+            <encoding>ISO-8859-7</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///Users/britto/Library/Application%20Support/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/jetty12/webdefault.xml):58">
+                  
+            <locale>en</locale>
+                  
+            <encoding>ISO-8859-1</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///Users/britto/Library/Application%20Support/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/jetty12/webdefault.xml):59">
+                  
+            <locale>is</locale>
+                  
+            <encoding>ISO-8859-1</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///Users/britto/Library/Application%20Support/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/jetty12/webdefault.xml):60">
+                  
+            <locale>it</locale>
+                  
+            <encoding>ISO-8859-1</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///Users/britto/Library/Application%20Support/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/jetty12/webdefault.xml):61">
+                  
+            <locale>es</locale>
+                  
+            <encoding>ISO-8859-1</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///Users/britto/Library/Application%20Support/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/jetty12/webdefault.xml):62">
+                  
+            <locale>iw</locale>
+                  
+            <encoding>ISO-8859-8</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///Users/britto/Library/Application%20Support/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/jetty12/webdefault.xml):63">
+                  
+            <locale>zh</locale>
+                  
+            <encoding>GB2312</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///Users/britto/Library/Application%20Support/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/jetty12/webdefault.xml):64">
+                  
+            <locale>et</locale>
+                  
+            <encoding>ISO-8859-1</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///Users/britto/Library/Application%20Support/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/jetty12/webdefault.xml):65">
+                  
+            <locale>cs</locale>
+                  
+            <encoding>ISO-8859-2</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///Users/britto/Library/Application%20Support/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/jetty12/webdefault.xml):66">
+                  
+            <locale>ar</locale>
+                  
+            <encoding>ISO-8859-6</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///Users/britto/Library/Application%20Support/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/jetty12/webdefault.xml):67">
+                  
+            <locale>ja</locale>
+                  
+            <encoding>Shift_JIS</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///Users/britto/Library/Application%20Support/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/jetty12/webdefault.xml):68">
+                  
+            <locale>pl</locale>
+                  
+            <encoding>ISO-8859-2</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///Users/britto/Library/Application%20Support/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/jetty12/webdefault.xml):69">
+                  
+            <locale>da</locale>
+                  
+            <encoding>ISO-8859-1</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///Users/britto/Library/Application%20Support/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/jetty12/webdefault.xml):70">
+                  
+            <locale>ro</locale>
+                  
+            <encoding>ISO-8859-2</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///Users/britto/Library/Application%20Support/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/jetty12/webdefault.xml):71">
+                  
+            <locale>nl</locale>
+                  
+            <encoding>ISO-8859-1</encoding>
+                
+        </locale-encoding-mapping>
+            
+        <locale-encoding-mapping origin="DefaultsDescriptor(file:///Users/britto/Library/Application%20Support/google-cloud-tools-java/managed-cloud-sdk/LATEST/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/jetty12/webdefault.xml):72">
+                  
+            <locale>tr</locale>
+                  
+            <encoding>ISO-8859-9</encoding>
+                
+        </locale-encoding-mapping>
+          
+    </locale-encoding-mapping-list>
+      
+    <session-config>
+            
+        <session-timeout>1440</session-timeout>
+            
+        <cookie-config>
+                  
+            <http-only>false</http-only>
+                  
+            <secure>false</secure>
+                  
+            <max-age>-1</max-age>
+                
+        </cookie-config>
+            
+        <tracking-mode>COOKIE</tracking-mode>
+            
+        <tracking-mode>URL</tracking-mode>
+          
+    </session-config>
+    
+</web-app>

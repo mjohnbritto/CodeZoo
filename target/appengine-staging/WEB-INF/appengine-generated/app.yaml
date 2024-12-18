@@ -1,0 +1,16 @@
+runtime: java21
+inbound_services:
+- warmup
+app_engine_apis: True
+auto_id_policy: default
+handlers:
+- url: (/.*)
+  static_files: __static__\1
+  upload: __NOT_USED__
+  require_matching_file: True
+  login: optional
+  secure: optional
+- url: /.*
+  script: unused
+  login: optional
+  secure: optional
