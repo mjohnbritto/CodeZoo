@@ -68,7 +68,7 @@
 
 .contact-image>figure {
 	
-	background-image: url(/Images/John.JPG);
+	/*background-image: url(/Images/John.JPG);*/
 	background-repeat: no-repeat;
 	background-position: center;
 	background-position-y: -45px;

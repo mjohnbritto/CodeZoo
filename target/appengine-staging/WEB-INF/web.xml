@@ -15,11 +15,6 @@
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.pages.algorithm.SearchModal_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.pages.algorithm.SearchModal_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
         <servlet-name>org.apache.jsp.pages.algorithm.TriangularModal_jsp</servlet-name>
         <servlet-class>org.apache.jsp.pages.algorithm.TriangularModal_jsp</servlet-class>
     </servlet>
@@ -35,33 +30,13 @@
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.pages.algorithm.SwapModal_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.pages.algorithm.SwapModal_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.persist.QuizDetails_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.persist.QuizDetails_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.pages.HomePage_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.pages.HomePage_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.pages.PerformanceAnalyzer_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.pages.PerformanceAnalyzer_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.pages.resetPassword_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.pages.resetPassword_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
         <servlet-name>org.apache.jsp.pages.Dashboard_jsp</servlet-name>
         <servlet-class>org.apache.jsp.pages.Dashboard_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.pages.algorithm.SwapModal_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.pages.algorithm.SwapModal_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -70,8 +45,23 @@
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.pages.Forum_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.pages.Forum_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.pages.PerformanceAnalyzer_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.pages.PerformanceAnalyzer_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.pages.HomePage_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.pages.HomePage_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.pages.algorithm.SearchModal_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.pages.algorithm.SearchModal_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.pages.resetPassword_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.pages.resetPassword_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -79,14 +69,19 @@
         <servlet-class>org.apache.jsp.persist.CourseConceptsDetails_jsp</servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>org.apache.jsp.pages.Forum_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.pages.Forum_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.persist.QuizDetails_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.persist.QuizDetails_jsp</servlet-class>
+    </servlet>
+
     <servlet-mapping>
         <servlet-name>org.apache.jsp.pages.algorithm.FibonacciModal_jsp</servlet-name>
         <url-pattern>/pages/algorithm/FibonacciModal.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.pages.algorithm.SearchModal_jsp</servlet-name>
-        <url-pattern>/pages/algorithm/SearchModal.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -105,33 +100,13 @@
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.pages.algorithm.SwapModal_jsp</servlet-name>
-        <url-pattern>/pages/algorithm/SwapModal.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.persist.QuizDetails_jsp</servlet-name>
-        <url-pattern>/persist/QuizDetails.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.pages.HomePage_jsp</servlet-name>
-        <url-pattern>/pages/HomePage.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.pages.PerformanceAnalyzer_jsp</servlet-name>
-        <url-pattern>/pages/PerformanceAnalyzer.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.pages.resetPassword_jsp</servlet-name>
-        <url-pattern>/pages/resetPassword.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
         <servlet-name>org.apache.jsp.pages.Dashboard_jsp</servlet-name>
         <url-pattern>/pages/Dashboard.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.pages.algorithm.SwapModal_jsp</servlet-name>
+        <url-pattern>/pages/algorithm/SwapModal.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -140,13 +115,38 @@
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.pages.Forum_jsp</servlet-name>
-        <url-pattern>/pages/Forum.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.pages.PerformanceAnalyzer_jsp</servlet-name>
+        <url-pattern>/pages/PerformanceAnalyzer.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.pages.HomePage_jsp</servlet-name>
+        <url-pattern>/pages/HomePage.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.pages.algorithm.SearchModal_jsp</servlet-name>
+        <url-pattern>/pages/algorithm/SearchModal.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.pages.resetPassword_jsp</servlet-name>
+        <url-pattern>/pages/resetPassword.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
         <servlet-name>org.apache.jsp.persist.CourseConceptsDetails_jsp</servlet-name>
         <url-pattern>/persist/CourseConceptsDetails.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.pages.Forum_jsp</servlet-name>
+        <url-pattern>/pages/Forum.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.persist.QuizDetails_jsp</servlet-name>
+        <url-pattern>/persist/QuizDetails.jsp</url-pattern>
     </servlet-mapping>
 
 <!-- JSPC servlet mappings end -->

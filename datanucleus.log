@@ -753,3 +753,25 @@ org.datanucleus.exceptions.ClassNotResolvedException: Class "org.datanucleus.api
 15:23:06,248 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/britto/project/CodeZoo/target/CodeZoo-1.0-SNAPSHOT/WEB-INF/classes/com/codezoo/data/JDO/PerformanceDetailsJDO.class" with enhanced definition
 15:23:06,251 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/britto/project/CodeZoo/target/CodeZoo-1.0-SNAPSHOT/WEB-INF/classes/com/codezoo/data/JDO/ForumQueryJDO.class" with enhanced definition
 15:23:06,251 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 8 classes. Timings : input=75 ms, enhance=29 ms, total=104 ms. Consult the log for full details
+12:46:07,886 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer for API "JDO"
+12:46:07,956 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.1.1) : Enhancement of classes
+12:46:08,053 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/britto/project/CodeZoo/target/CodeZoo-1.0-SNAPSHOT/WEB-INF/classes/com/codezoo/data/JDO/UsersJDO.class" with enhanced definition
+12:46:08,055 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/britto/project/CodeZoo/target/CodeZoo-1.0-SNAPSHOT/WEB-INF/classes/com/codezoo/data/JDO/ConceptsJDO.class" with enhanced definition
+12:46:08,056 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/britto/project/CodeZoo/target/CodeZoo-1.0-SNAPSHOT/WEB-INF/classes/com/codezoo/data/JDO/ForumAnswerJDO.class" with enhanced definition
+12:46:08,057 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/britto/project/CodeZoo/target/CodeZoo-1.0-SNAPSHOT/WEB-INF/classes/com/codezoo/data/JDO/CourseJDO.class" with enhanced definition
+12:46:08,058 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/britto/project/CodeZoo/target/CodeZoo-1.0-SNAPSHOT/WEB-INF/classes/com/codezoo/data/JDO/ChangePasswordJDO.class" with enhanced definition
+12:46:08,060 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/britto/project/CodeZoo/target/CodeZoo-1.0-SNAPSHOT/WEB-INF/classes/com/codezoo/data/JDO/PerformanceAnalyzerJDO.class" with enhanced definition
+12:46:08,061 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/britto/project/CodeZoo/target/CodeZoo-1.0-SNAPSHOT/WEB-INF/classes/com/codezoo/data/JDO/PerformanceDetailsJDO.class" with enhanced definition
+12:46:08,064 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/britto/project/CodeZoo/target/CodeZoo-1.0-SNAPSHOT/WEB-INF/classes/com/codezoo/data/JDO/ForumQueryJDO.class" with enhanced definition
+12:46:08,065 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 8 classes. Timings : input=78 ms, enhance=30 ms, total=108 ms. Consult the log for full details
+11:44:46,778 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer for API "JDO"
+11:44:46,850 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.1.1) : Enhancement of classes
+11:44:46,948 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/britto/project/CodeZoo/target/CodeZoo-1.0-SNAPSHOT/WEB-INF/classes/com/codezoo/data/JDO/UsersJDO.class" with enhanced definition
+11:44:46,949 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/britto/project/CodeZoo/target/CodeZoo-1.0-SNAPSHOT/WEB-INF/classes/com/codezoo/data/JDO/ConceptsJDO.class" with enhanced definition
+11:44:46,951 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/britto/project/CodeZoo/target/CodeZoo-1.0-SNAPSHOT/WEB-INF/classes/com/codezoo/data/JDO/ForumAnswerJDO.class" with enhanced definition
+11:44:46,952 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/britto/project/CodeZoo/target/CodeZoo-1.0-SNAPSHOT/WEB-INF/classes/com/codezoo/data/JDO/CourseJDO.class" with enhanced definition
+11:44:46,954 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/britto/project/CodeZoo/target/CodeZoo-1.0-SNAPSHOT/WEB-INF/classes/com/codezoo/data/JDO/ChangePasswordJDO.class" with enhanced definition
+11:44:46,955 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/britto/project/CodeZoo/target/CodeZoo-1.0-SNAPSHOT/WEB-INF/classes/com/codezoo/data/JDO/PerformanceAnalyzerJDO.class" with enhanced definition
+11:44:46,959 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/britto/project/CodeZoo/target/CodeZoo-1.0-SNAPSHOT/WEB-INF/classes/com/codezoo/data/JDO/PerformanceDetailsJDO.class" with enhanced definition
+11:44:46,960 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/britto/project/CodeZoo/target/CodeZoo-1.0-SNAPSHOT/WEB-INF/classes/com/codezoo/data/JDO/ForumQueryJDO.class" with enhanced definition
+11:44:46,961 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 8 classes. Timings : input=78 ms, enhance=32 ms, total=110 ms. Consult the log for full details

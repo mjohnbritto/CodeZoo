@@ -86,7 +86,7 @@
 	        </div>
 		</p>
 		<p class="lead" style="text-align: center;">
-			You are also welcome to chat me through <a href="mailto:mjohnbrittobics@gmail.com"> support@codezoo.com </a>
+			You are also welcome to chat me through <a href="mailto:joestephyleena@gmail.com"> support@codezoo.com </a>
 		</p>
 		<p class="lead" style="white-space:pre;">
 		</p>
@@ -95,7 +95,7 @@
       <div class="container marketing">
          <footer>
             <p class="pull-right"><a href="#">Back to top</a></p>
-            <p>&copy; 2016 John-Britto &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+            <p>&copy; 2025 Joe Stephy Leena &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
          </footer>
       </div>
       <!-- /.container -->

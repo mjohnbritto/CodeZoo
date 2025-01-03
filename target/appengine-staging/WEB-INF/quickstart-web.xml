@@ -4,8 +4,8 @@
   <context-param>
     <param-name>org.eclipse.jetty.containerInitializers</param-name>
     <param-value><![CDATA[
-    "ContainerInitializer{org.eclipse.jetty.ee8.apache.jsp.JettyJasperInitializer,interested=[],applicable=[],annotated=[]}",
-    "ContainerInitializer{org.springframework.web.SpringServletContainerInitializer,interested=[org.springframework.web.context.AbstractContextLoaderInitializer, org.springframework.web.server.adapter.AbstractReactiveWebInitializer, org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer, org.springframework.web.servlet.support.AbstractDispatcherServletInitializer],applicable=[],annotated=[]}"]]></param-value>
+    "ContainerInitializer{org.springframework.web.SpringServletContainerInitializer,interested=[org.springframework.web.context.AbstractContextLoaderInitializer, org.springframework.web.server.adapter.AbstractReactiveWebInitializer, org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer, org.springframework.web.servlet.support.AbstractDispatcherServletInitializer],applicable=[],annotated=[]}",
+    "ContainerInitializer{org.eclipse.jetty.ee8.apache.jsp.JettyJasperInitializer,interested=[],applicable=[],annotated=[]}"]]></param-value>
   </context-param>
   <context-param>
     <param-name>org.eclipse.jetty.tlds</param-name>
@@ -47,23 +47,23 @@
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
-    <servlet-name>org.apache.jsp.pages.algorithm.SearchModal_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):2">org.apache.jsp.pages.algorithm.SearchModal_jsp</servlet-class>
-    <async-supported>false</async-supported>
-  </servlet>
-  <servlet>
     <servlet-name>org.apache.jsp.pages.algorithm.TriangularModal_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):3">org.apache.jsp.pages.algorithm.TriangularModal_jsp</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):2">org.apache.jsp.pages.algorithm.TriangularModal_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>org.apache.jsp.pages.algorithm.SortModal_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):4">org.apache.jsp.pages.algorithm.SortModal_jsp</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):3">org.apache.jsp.pages.algorithm.SortModal_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>org.apache.jsp.pages.Contact_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):5">org.apache.jsp.pages.Contact_jsp</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):4">org.apache.jsp.pages.Contact_jsp</servlet-class>
+    <async-supported>false</async-supported>
+  </servlet>
+  <servlet>
+    <servlet-name>org.apache.jsp.pages.Dashboard_jsp</servlet-name>
+    <servlet-class origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):5">org.apache.jsp.pages.Dashboard_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
@@ -72,33 +72,33 @@
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
-    <servlet-name>org.apache.jsp.persist.QuizDetails_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):7">org.apache.jsp.persist.QuizDetails_jsp</servlet-class>
-    <async-supported>false</async-supported>
-  </servlet>
-  <servlet>
-    <servlet-name>org.apache.jsp.pages.HomePage_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):8">org.apache.jsp.pages.HomePage_jsp</servlet-class>
+    <servlet-name>org.apache.jsp.pages.About_jsp</servlet-name>
+    <servlet-class origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):7">org.apache.jsp.pages.About_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>org.apache.jsp.pages.PerformanceAnalyzer_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):9">org.apache.jsp.pages.PerformanceAnalyzer_jsp</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):8">org.apache.jsp.pages.PerformanceAnalyzer_jsp</servlet-class>
+    <async-supported>false</async-supported>
+  </servlet>
+  <servlet>
+    <servlet-name>org.apache.jsp.pages.HomePage_jsp</servlet-name>
+    <servlet-class origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):9">org.apache.jsp.pages.HomePage_jsp</servlet-class>
+    <async-supported>false</async-supported>
+  </servlet>
+  <servlet>
+    <servlet-name>org.apache.jsp.pages.algorithm.SearchModal_jsp</servlet-name>
+    <servlet-class origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):10">org.apache.jsp.pages.algorithm.SearchModal_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>org.apache.jsp.pages.resetPassword_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):10">org.apache.jsp.pages.resetPassword_jsp</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):11">org.apache.jsp.pages.resetPassword_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
-    <servlet-name>org.apache.jsp.pages.Dashboard_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):11">org.apache.jsp.pages.Dashboard_jsp</servlet-class>
-    <async-supported>false</async-supported>
-  </servlet>
-  <servlet>
-    <servlet-name>org.apache.jsp.pages.About_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):12">org.apache.jsp.pages.About_jsp</servlet-class>
+    <servlet-name>org.apache.jsp.persist.CourseConceptsDetails_jsp</servlet-name>
+    <servlet-class origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):12">org.apache.jsp.persist.CourseConceptsDetails_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
@@ -107,8 +107,8 @@
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
-    <servlet-name>org.apache.jsp.persist.CourseConceptsDetails_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):14">org.apache.jsp.persist.CourseConceptsDetails_jsp</servlet-class>
+    <servlet-name>org.apache.jsp.persist.QuizDetails_jsp</servlet-name>
+    <servlet-class origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):14">org.apache.jsp.persist.QuizDetails_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet-mapping origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):15">
@@ -116,56 +116,56 @@
     <url-pattern>/pages/algorithm/FibonacciModal.jsp</url-pattern>
   </servlet-mapping>
   <servlet-mapping origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):16">
-    <servlet-name>org.apache.jsp.pages.algorithm.SearchModal_jsp</servlet-name>
-    <url-pattern>/pages/algorithm/SearchModal.jsp</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):17">
     <servlet-name>org.apache.jsp.pages.algorithm.TriangularModal_jsp</servlet-name>
     <url-pattern>/pages/algorithm/TriangularModal.jsp</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):18">
+  <servlet-mapping origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):17">
     <servlet-name>org.apache.jsp.pages.algorithm.SortModal_jsp</servlet-name>
     <url-pattern>/pages/algorithm/SortModal.jsp</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):19">
+  <servlet-mapping origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):18">
     <servlet-name>org.apache.jsp.pages.Contact_jsp</servlet-name>
     <url-pattern>/pages/Contact.jsp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):19">
+    <servlet-name>org.apache.jsp.pages.Dashboard_jsp</servlet-name>
+    <url-pattern>/pages/Dashboard.jsp</url-pattern>
   </servlet-mapping>
   <servlet-mapping origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):20">
     <servlet-name>org.apache.jsp.pages.algorithm.SwapModal_jsp</servlet-name>
     <url-pattern>/pages/algorithm/SwapModal.jsp</url-pattern>
   </servlet-mapping>
   <servlet-mapping origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):21">
-    <servlet-name>org.apache.jsp.persist.QuizDetails_jsp</servlet-name>
-    <url-pattern>/persist/QuizDetails.jsp</url-pattern>
+    <servlet-name>org.apache.jsp.pages.About_jsp</servlet-name>
+    <url-pattern>/pages/About.jsp</url-pattern>
   </servlet-mapping>
   <servlet-mapping origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):22">
-    <servlet-name>org.apache.jsp.pages.HomePage_jsp</servlet-name>
-    <url-pattern>/pages/HomePage.jsp</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):23">
     <servlet-name>org.apache.jsp.pages.PerformanceAnalyzer_jsp</servlet-name>
     <url-pattern>/pages/PerformanceAnalyzer.jsp</url-pattern>
   </servlet-mapping>
+  <servlet-mapping origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):23">
+    <servlet-name>org.apache.jsp.pages.HomePage_jsp</servlet-name>
+    <url-pattern>/pages/HomePage.jsp</url-pattern>
+  </servlet-mapping>
   <servlet-mapping origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):24">
+    <servlet-name>org.apache.jsp.pages.algorithm.SearchModal_jsp</servlet-name>
+    <url-pattern>/pages/algorithm/SearchModal.jsp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):25">
     <servlet-name>org.apache.jsp.pages.resetPassword_jsp</servlet-name>
     <url-pattern>/pages/resetPassword.jsp</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):25">
-    <servlet-name>org.apache.jsp.pages.Dashboard_jsp</servlet-name>
-    <url-pattern>/pages/Dashboard.jsp</url-pattern>
-  </servlet-mapping>
   <servlet-mapping origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):26">
-    <servlet-name>org.apache.jsp.pages.About_jsp</servlet-name>
-    <url-pattern>/pages/About.jsp</url-pattern>
+    <servlet-name>org.apache.jsp.persist.CourseConceptsDetails_jsp</servlet-name>
+    <url-pattern>/persist/CourseConceptsDetails.jsp</url-pattern>
   </servlet-mapping>
   <servlet-mapping origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):27">
     <servlet-name>org.apache.jsp.pages.Forum_jsp</servlet-name>
     <url-pattern>/pages/Forum.jsp</url-pattern>
   </servlet-mapping>
   <servlet-mapping origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):28">
-    <servlet-name>org.apache.jsp.persist.CourseConceptsDetails_jsp</servlet-name>
-    <url-pattern>/persist/CourseConceptsDetails.jsp</url-pattern>
+    <servlet-name>org.apache.jsp.persist.QuizDetails_jsp</servlet-name>
+    <url-pattern>/persist/QuizDetails.jsp</url-pattern>
   </servlet-mapping>
   <servlet-mapping origin="WebDescriptor(file:///Users/britto/project/CodeZoo/target/appengine-staging/WEB-INF/web.xml):29">
     <servlet-name>FlowController</servlet-name>
@@ -355,7 +355,7 @@
       <secure>false</secure>
       <max-age>-1</max-age>
     </cookie-config>
-    <tracking-mode>COOKIE</tracking-mode>
     <tracking-mode>URL</tracking-mode>
+    <tracking-mode>COOKIE</tracking-mode>
   </session-config>
 </web-app>
